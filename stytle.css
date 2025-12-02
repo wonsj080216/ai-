@@ -1,0 +1,146 @@
+/* 1. 폰트 및 전역 설정 (Gothic A1로 변경 및 두께 600으로 조정) */
+body {
+    /* Gothic A1로 변경: 모던하고 부드러우며 가독성이 좋은 글꼴 */
+    font-family: 'Gothic A1', 'Noto Sans KR', sans-serif; 
+    word-break: keep-all; 
+    line-height: 1.7;
+    overflow-x: hidden; 
+    background-color: #f8f9fa; /* 배경색을 아주 연한 회색으로 변경 */
+    font-weight: 600; /* 기본 글꼴 두께를 500에서 600으로 올려서 더욱 두껍고 또렷하게 만듭니다. */
+}
+
+/* 글꼴 두께 커스텀 */
+.fw-black {
+    font-weight: 900 !important;
+}
+
+/* 2. Hero 섹션 배경 디자인 */
+.hero-section {
+    /* 배경 그라데이션을 더 차분하고 깊은 느낌으로 변경 */
+    background: linear-gradient(135deg, #e0e7f3 0%, #ffffff 100%);
+    border-radius: 0 0 30px 30px; /* 모던함을 위해 모서리를 둥글게 유지 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+    padding-bottom: 80px !important;
+}
+
+.hero-img {
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* 호버 효과 부드럽게 */
+    max-width: 100%; 
+    height: auto;
+}
+
+.hero-img:hover {
+    transform: scale(1.01); /* 과하지 않은 확대 효과 */
+}
+
+/* 3. CTA 버튼 스타일 (Pulse 애니메이션 제거 및 세련된 디자인 적용) */
+.cta-btn {
+    background-color: #004d99 !important; /* 메인 블루 톤 */
+    border-color: #004d99 !important;
+    box-shadow: 0 6px 15px rgba(0, 77, 153, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #003366 !important; /* 호버 시 더 어둡게 */
+    border-color: #003366 !important;
+    transform: translateY(-3px); /* 부드러운 리프트 효과 */
+    box-shadow: 0 8px 20px rgba(0, 77, 153, 0.4);
+}
+
+/* 4. 요약 카드 커스텀 (부드러운 디자인으로 변경) */
+.summary-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-top: none; /* 상단 바 색상 제거 */
+    border-radius: 12px;
+}
+
+/* 카드별 아이콘 색상 유지 */
+.card-1 .fa-robot { color: #004d99; } /* 짙은 파랑 */
+.card-2 .fa-brain { color: #00b894; } /* 녹색 계열 */
+.card-3 .fa-book-reader { color: #ffc107; } /* 노란색 계열 */
+
+.summary-card:hover {
+    transform: translateY(-5px); /* 부드러운 리프트 */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    z-index: 10;
+}
+
+.summary-card .btn-outline-info {
+    color: #004d99;
+    border-color: #004d99;
+}
+.summary-card .btn-outline-info:hover {
+    background-color: #004d99;
+    color: white;
+}
+
+
+/* 5. 세부 페이지 콘텐츠 스타일 */
+.detail-content-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05); /* 더 부드럽고 넓은 그림자 */
+}
+
+.detail-content-section h2 {
+    font-weight: 700;
+    color: #1a2a3a; /* 더 진한 텍스트 색상 */
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 15px;
+}
+
+.detail-content-section h3 {
+    font-weight: 600;
+    color: #004d99; /* 짙은 파랑 */
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Callout Box 스타일 (정보 강조) */
+.callout-box {
+    background-color: #f1f6ff; /* 더 차분한 배경색 */
+    border-left: 6px solid #004d99; /* 짙은 파랑 */
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.callout-box p {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #004d99;
+}
+
+/* 6. 네비게이션 바 및 푸터 배경색 커스텀 */
+/* 상단 바 (네비게이션 바) 배경색을 밝고 가벼운 톤으로 변경 */
+.navbar.bg-dark {
+    background-color: #e0e7f3 !important; /* 연한 블루 톤으로 변경 */
+    border-bottom: 1px solid #c9d6e5; /* 경계선을 얇게 추가 */
+}
+
+/* 네비게이션 링크 텍스트 색상을 어두운 계열로 변경 (밝은 배경에 맞게) */
+.navbar-dark .navbar-nav .nav-link {
+    color: #1a2a3a; /* 진한 회색-파랑 톤 */
+}
+
+/* 네비게이션 브랜드(로고) 텍스트 색상도 조정 */
+.navbar-brand.text-info {
+    color: #004d99 !important; /* 메인 블루 톤 유지 */
+}
+
+/* 푸터 배경색을 밝고 가벼운 톤으로 변경 */
+footer.bg-dark {
+    background-color: #e0e7f3 !important; /* 연한 블루 톤으로 변경 */
+    color: #1a2a3a !important; /* 텍스트 색상도 어둡게 변경 */
+    border-top: 1px solid #c9d6e5;
+}
+
+footer .mb-0 {
+    color: #1a2a3a !important;
+}

@@ -1,0 +1,87 @@
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 모바일 화면 크기에 맞춰 페이지를 렌더링하는 핵심 태그 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI의 영향 - 미래 직업 분석</title>
+    
+    <!-- 필수: 부트스트랩 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 구글 폰트 (Gothic A1 및 Noto Sans KR 추가) -->
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome 아이콘 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="index.html">
+                <i class="fas fa-compass me-2"></i>AI Future Compass
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- 현재 페이지 강조 -->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="impact.html">AI의 영향</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adaptation.html">우리의 적응</a></li>
+                    <li class="nav-item"><a class="nav-link" href="why_learn_ai.html">왜 AI인가?</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 세부 콘텐츠 영역 -->
+    <main class="container py-5">
+        <div class="detail-content-section">
+            <h2 class="text-center">AI 시대, 직업의 지각변동 분석</h2>
+
+            <p class="lead intro-text">
+                인공지능은 단순히 반복적인 업무를 대체하는 것을 넘어, 산업 전반의 가치 사슬을 재편하고 있습니다. 우리는 이 변화를 위협이 아닌 기회로 인식하고, AI가 대체할 수 없는 창의적이고 감성적인 영역에 집중해야 합니다.
+            </p>
+
+            <!-- Callout Box: 정보 강조 -->
+            <div class="callout-box">
+                <p>
+                    <i class="fas fa-exclamation-triangle me-2"></i>주의: AI는 자동화의 속도를 높일 뿐, 인간의 '공감'과 '창의성'은 대체할 수 없는 핵심 영역입니다.
+                </p>
+            </div>
+
+            <section>
+                <h3>1. AI가 대체할 가능성이 높은 직무</h3>
+                <p>
+                    데이터 입력, 단순 고객 서비스 응대, 반복적인 보고서 작성, 기초적인 코딩 등 규칙 기반의 정형화된 업무는 AI와 로봇이 가장 빠르게 대체할 분야입니다. 이러한 직무에 종사하는 인력은 새로운 기술을 학습하여 AI를 '도구'로 활용하는 역할로 전환해야 생존할 수 있습니다. 예를 들어, 단순 데이터 분석은 AI에게 맡기고, 분석된 결과를 바탕으로 전략적인 의사 결정을 내리는 역할이 중요해집니다.
+                </p>
+            </section>
+
+            <section>
+                <h3>2. AI 시대에 새롭게 떠오르는 직업군</h3>
+                <p>
+                    AI 모델을 설계하고, 데이터를 관리하며, AI의 결과를 해석하고 윤리적으로 통제하는 직업들이 각광받습니다. 특히, 프롬프트 엔지니어처럼 AI와 소통하는 방법을 전문적으로 연구하거나, AI 윤리 및 규제 전문가처럼 사회적 합의를 이끌어내는 역할은 인간만이 할 수 있는 영역입니다. 또한, 심리학자, 예술가 등 인간의 감성과 상호작용이 필수적인 직업의 가치는 더욱 상승할 것입니다.
+                </p>
+                <img src="./job_change_visual.jpg" alt="떠오르는 AI 직업군 다이어그램" class="img-fluid rounded-3 my-3">
+            </section>
+
+            <a href="index.html" class="btn btn-outline-secondary mt-4">
+                <i class="fas fa-chevron-left me-2"></i> 메인으로 돌아가기
+            </a>
+        </div>
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 AI Future Compass. Designed with Bootstrap 5.</p>
+        </div>
+    </footer>
+
+    <!-- 필수: 부트스트랩 JS 번들 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
